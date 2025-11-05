@@ -1,0 +1,64 @@
+# =========================================
+# 🧠 IDE / Editor settings
+# =========================================
+/shelf/
+/workspace.xml
+/httpRequests/
+/dataSources/
+/dataSources.local.xml
+.idea/
+
+# =========================================
+# 🧩 Python & Django
+# =========================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.log
+*.pot
+*.pyc
+*.sqlite3
+db.sqlite3
+.DS_Store
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+*.env
+*.venv
+
+# =========================================
+# 🧰 Django specific
+# =========================================
+staticfiles/
+media/
+*.bak
+*.swp
+
+# Migrations (optional to ignore if you prefer committing them)
+# */migrations/
+# !*/migrations/__init__.py
+
+# =========================================
+# 🧪 VSCode / JetBrains
+# =========================================
+.vscode/
+.idea/
+
+# =========================================
+# 🧱 Deployment
+# =========================================
+*.log
+*.pid
+*.seed
+*.cover
+*.cache
+
+# =========================================
+# 🎨 Tailwind & Node
+# =========================================
+node_modules/
+theme/static/css/dist/
