@@ -74,12 +74,11 @@ WSGI_APPLICATION = "my_site.wsgi.application"
 
 DATABASES = {
     'default': dj_database_url.config(
-        default='sqlite:///' + str(Path(__file__).resolve().parent.parent / 'db.sqlite3'),
+        default=os.getenv("DATABASE_URL", f"sqlite:///{BASE_DIR / 'db.sqlite3'}"),
         conn_max_age=600,
-        # Setting this to read from an environment variable named DATABASE_URL
+        ssl_require=not DEBUG  # SSL only in production
     )
 }
-
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [
     {"NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator"},
